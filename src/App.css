@@ -1,38 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
+  font-family: sans-serif;
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.iframe {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  height: 80%;
+  width: 400px;
+  border-radius: 20px;
+  border: 1px solid #0000001f;
+  min-width: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  height: 15px;
+  width: 100px;
+  background-color: gray;
+  border-radius: 25px;
+  padding: 15px 8px;
+  color: white;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.image-1 {
+  width: 18px;
+  height: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.image-2 {
+  width: 18px;
+  height: 12px;
+}
+
+.text-1 {
+  border-left: 0.5px solid white;
+  padding-left: 10px;
+  margin-left: 10px;
+  font-size: 12px;
+  user-select: none;
+}
+
+@media screen and (max-width: 640px) {
+  .iframe {
+    width: 100%;
+    right: 0px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+
+
+.shadowIframe{
+  box-shadow: 0px 0px 50px -3px rgba(0,0,0,0.1);
+}
+
+.shadowIcon{
+  box-shadow: 0px 0px 13px 10px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width:640px) {
+  .mobileDv{
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+  }
+  .buttonWdHdSh{
+      display: none;
   }
 }
