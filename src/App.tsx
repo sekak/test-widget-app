@@ -1,15 +1,19 @@
 import './App.css';
-import ButtonWidget from './components/ButtonWidget';
-import Frame from './components/Frame';
+import Details from './components/Details';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Widget from './components/Widget';
 import { ContextProvide, CreateContext } from './context/Context';
 
 function App() {
- 
+
   return (
     <ContextProvide>
-      <div className="h-screen w-screen box-content relative overflow-hidden">
-        <ButtonWidget />
-        <Frame />
+      <div className="h-screen w-screen box-content relative">
+        <Widget />
+        <Navbar />
+        <Hero />
+        <Details />
       </div>
     </ContextProvide>
   );
