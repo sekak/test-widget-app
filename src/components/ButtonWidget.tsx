@@ -8,14 +8,9 @@ const ButtonWidget = () => {
 
     return (
         <div className='w-full h-full'>
-            {/* <div className='fixed sm:bottom-10 sm:right-10 bottom-4 right-4 p-2 sm:flex cursor-pointer z-[999]'>
+            <div className='fixed sm:bottom-10 sm:right-10 bottom-4 right-4 p-2 sm:flex cursor-pointer z-[999]'>
                  <motion.button variants={variantsChange} animate={open ? "open1" : "closed1"} className='w-[50px] h-[50px] bg-gray-500 rounded-full relative flex items-center justify-center' onClick={()=>setOpen(!open)}>
                     <img alt='img1' src="./Vector.png"  className='w-[20px] h-[20px] '/>
-                 </motion.button>
-            </div> */}
-            <div className='fixed sm:bottom-10 sm:right-10 bottom-4 right-4 p-2 sm:flex cursor-pointer z-[999]'>
-                 <motion.button variants={variantsChange} animate={open ? "open1" : "closed1"} className='w-[50px] h-[50px] bg-white-bg border border-gray-400 rounded-full relative flex items-center justify-center opacity-[0.5]' onClick={()=>setOpen(!open)}>
-                    <img alt='img1' src="./icon-1.png"  className='w-[22px] h-[15px] '/>
                  </motion.button>
             </div>
         </div>
