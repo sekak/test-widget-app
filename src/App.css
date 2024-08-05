@@ -15,4 +15,7 @@
     bottom: 0;
     height: 80%;
   }
+  .opacityButton{
+    opacity: 0.6;
+  }
 }

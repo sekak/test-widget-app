@@ -8,7 +8,7 @@ const ButtonWidget = () => {
 
     return (
         <div className='w-full h-full'>
-            <div className='fixed sm:bottom-10 sm:right-10 bottom-4 right-4 p-2 sm:flex cursor-pointer z-[999]'>
+            <div className={`fixed sm:bottom-10 sm:right-10 bottom-4 right-4 p-2 sm:flex cursor-pointer z-[999] ${open && 'opacityButton'}`}>
                  <motion.button variants={variantsChange} animate={open ? "open1" : "closed1"} className='w-[50px] h-[50px] bg-gray-500 rounded-full relative flex items-center justify-center' onClick={()=>setOpen(!open)}>
                     <img alt='img1' src="./Vector.png"  className='w-[20px] h-[20px] '/>
                  </motion.button>
