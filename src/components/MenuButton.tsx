@@ -27,7 +27,7 @@ const MenuButton = () => {
                 <div className={`w-[20px] h-[2.5px] bg-black rounded-md ease-in-out duration-500 ${open && 'opacity-0'}`}></div>
                 <div className={`w-[20px] h-[2.5px] bg-black rounded-md ease-in-out duration-500 ${open && '-rotate-45 origin-left'}`}></div>
             </div>
-            <motion.div className='rounded-[20px] w-full absolute left-0 top-20 navbar' variants={variants} animate={!open ? 'closed' : 'open'}>
+            <motion.div className='rounded-[20px] w-full absolute left-0 top-20 navbar opacity-0' variants={variants} animate={!open ? 'closed' : 'open'}>
                 <motion.ul className='flex flex-col gap-5 regular-14-karla p-6' variants={variantsUl} animate={open ? 'open' : 'closed'}> 
                     <motion.li className='borderBlack' variants={variantsUl} >About me</motion.li>
                     <motion.li className='borderBlack' variants={variantsUl} >Inspiration</motion.li>
